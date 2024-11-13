@@ -9,15 +9,11 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'javac HelloWorld.java'
-                bat 'javac Merci.java'
-                bat 'javac DeRien.java'
             }
         }
         stage('Run') {
             steps {
                 bat 'java HelloWorld'
-                bat 'java Merci'
-                bat 'java DeRien'
             }
         }
     }
